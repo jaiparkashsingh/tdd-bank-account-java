@@ -45,20 +45,20 @@ public class AccountTest {
         assertThat( account.balance).isEqualTo(90);
     }
 
-//    @Test
-//    public void checkTransferWithNoBalance() {
-//        Account account = new Account();
-//        account.transfer(1234, 10);
-//        assertThat( account.balance).isEqualTo(0);
-//    }
-//
-//    @Test
-//    public void checkDeposittransferBalance() {
-//        Account account = new Account();
-//        account.deposit(100);
-//        account.transfer(1234,10);
-//        assertThat( account.balance).isEqualTo(90);
-//    }
+    @Test
+    public void checkTransferWithNoBalance() {
+        Account account = new Account();
+        account.transfer(1234, 10);
+        assertThat( account.balance).isEqualTo(0);
+    }
+
+    @Test
+    public void checkDeposittransferBalance() {
+        Account account = new Account();
+        account.deposit(100);
+        account.transfer(1234,10);
+        assertThat( account.balance).isEqualTo(90);
+    }
 
 
 }
